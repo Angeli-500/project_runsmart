@@ -1,0 +1,115 @@
+@media (max-width: 1200px) {
+    
+    
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 740px;
+    }
+    .promo {
+        &__header {
+            font-size: 37px;
+            line-height: 37px;
+            margin-top: 80px;
+        }
+        &__subheader {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 90vw;
+    }
+    .header{
+        gap: 20px;
+        &__logo {
+        width: 200px;
+        align-self: center;
+        }
+        &__official {
+            span {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        &__tel {
+            font-size: 17px;
+        }
+    }
+    .promo {
+        min-height: 610px;
+        padding: 21px 0 67px 0;
+        &__header{
+            font-size: 34px;
+            line-height: 34px;
+            margin-top: 70px;
+        }
+        &__subheader {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    .advantages{
+        &__item{
+            margin-top: 50px;
+        }
+    }
+
+}
+@media (max-width: 575px) {
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        &__logo {
+            width: 45vw;
+        }
+        &__official {
+            display: none;
+        }
+        &__contacts {
+            a {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .promo  {
+        &__wrapper{
+            align-items: center;
+        }
+        &__header {
+            font-size: 27px;
+            margin-top: 45px;
+            text-align: center;
+        }
+        &__subheader {
+            text-align: center;
+            font-size: 17px;
+        }
+        &__icons{
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            margin-top: 0;
+        }
+        &__icon {
+            margin-top: 50px;
+        }
+    }
+    .button_main {
+        width: 260px;
+    }
+    .title {
+        font-size: 27px;
+    }
+}
