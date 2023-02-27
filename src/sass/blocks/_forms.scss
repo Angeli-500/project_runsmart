@@ -1,0 +1,17 @@
+.form {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    input {
+        width: 303px;
+        height: 54px;
+        background: $white-text;
+        border-radius: 5px;
+        border-style: none;
+        padding: 0 21px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #4B4B4B;
+    }
+}
