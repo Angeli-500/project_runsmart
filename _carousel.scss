@@ -1,0 +1,38 @@
+.carousel {
+    padding: 108px 0;
+}
+.prev, .next {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    bottom: 50%;
+    border-style: none;
+    background-color: inherit;
+}
+.next {
+    left: auto;
+    right: 0;
+}
+.tns-item {
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 750px;
+    }
+}
+.tns-nav {
+    display: flex;
+    justify-content: center;
+    button {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        background: #D6D6D6;
+        transition: opacity .2s ease;
+        border-radius: 100%;
+        border-style: none;
+    }
+    .tns-nav-active{
+        background: #929292;
+    }
+}
