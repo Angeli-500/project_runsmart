@@ -1,4 +1,6 @@
 .button {
+    position: relative;
+    overflow: hidden;
     font-weight: 500;
     font-size: 12px;
     line-height: 19px;
@@ -9,6 +11,22 @@
     background: $main-color;
     border-radius: 5px;
     border-style: none;
+    &:before {
+        content: "";
+        background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+        height: 80px;
+        width: 50px;
+        position: absolute;
+        top: -8px;
+        left: -90px;
+        transform: skewX(-45deg);
+    }
+    &:hover {
+        &::before {
+            left: 120%;
+            transition: .8s ease-in-out;
+        }
+    }
     &_main {
         width: 303px;
         height: 54px;
@@ -22,5 +40,10 @@
         margin-top: 5px;
         font-size: 16px;
         line-height: 25px;
+    }
+    &_catalog-item {
+        width: 135px;
+        height: 44px;
+        font-size: 14px;
     }
 }

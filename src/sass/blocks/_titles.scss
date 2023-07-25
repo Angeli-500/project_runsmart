@@ -13,5 +13,14 @@
         width: 799px;
         text-align: start;
     }
+    &_catalog {
+        font-weight: 500;
+    }
+}
+.consultation {
+    .title {
+        animation: flipInXTitle 1s ease-in forwards 0.4s;
+        opacity: 0;
+    }
 }
 

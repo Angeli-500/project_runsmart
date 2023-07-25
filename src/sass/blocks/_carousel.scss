@@ -1,0 +1,48 @@
+.carousel {
+    padding: 108px 0;
+    &__image-wrapper {
+        text-align: center;
+    }
+    &__image {
+        max-width: 100%;
+    }
+    &__button-prev, &__button-next {
+        &::after {
+            display: none;
+        }
+    }
+    &__button-prev, &__button-next {
+        margin-top: 0;
+        transform: translateY(-50%);
+        left: 3px;
+        top: 50%;
+    }
+    &__button-next {
+        left: auto;
+        right: 3px;
+    }
+    
+}
+
+.carousel-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &__slider-wrapper {
+        height: 580px;
+    }
+    &__image-wrapper {
+        height: 100px;
+        text-align: center;
+    }
+    &__image {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    &__button-prev, &__button-next {
+        &::after {
+            display: none;
+        }
+    }
+}
