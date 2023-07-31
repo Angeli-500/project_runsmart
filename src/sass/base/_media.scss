@@ -91,15 +91,12 @@
         flex-wrap: wrap;
         height: auto;
         justify-content: center;
-        &__logo {
-            width: 45vw;
-        }
         &__official {
-            display: none;
+            // display: none;
         }
         &__contacts {
             a {
-                margin-bottom: 5px;
+                margin-bottom: 15px;
             }
         }
     }

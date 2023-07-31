@@ -17,7 +17,9 @@
         height: 70px;
         transform: scale3d(0, 0, 0);
         animation: scaleImg 0.7s ease-in-out forwards 0.6s, bounceInImg 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards 1.3s;
-    
+        img {
+            width: 100%;
+        }
     }
     &__subtile {
         margin-top: 35px;
