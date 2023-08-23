@@ -42,23 +42,6 @@ $(document).ready(function(){
   toggleSlide('.catalog-item__more');
   toggleSlide('.catalog-item__back');
 
-  // $('.footer__social-circle').mouseenter(
-  //     function(){ $('.footer__social-runner').toggleClass('footer__social-runner_active-hover').removeClass('footer__social-runner_unHover')},
-  // );
-  // $('.footer__social-circle').mouseleave(
-  //   function(){ $('.footer__social-runner').toggleClass('footer__social-runner_active-hover').addClass('footer__social-runner_unHover')},
-  // );
-
-  function toggleCircle(item) {
-    $(item).each(function(i) {
-      $(this).on('mouseenter', function() {
-        $('.footer__social-runner').eq(i).toggleClass('footer__social-runner_active-hover').removeClass('footer__social-runner_unHover');
-      });
-    });
-  };
-  toggleCircle('.footer__social-circle');
-
-
   $('[data-modal = consultation]').on('click', function(){
     $('#consultation').css('display', 'flex');
     $('.overlay, #consultation, #consultation .modal__close').fadeIn(500);

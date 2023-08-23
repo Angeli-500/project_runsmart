@@ -47,31 +47,12 @@
         height: 52px;
         border: 2px solid $white-text;
         border-radius: 100%;
-        img {
-            height: 24px;
-        }
-    }
-    &__social-circle {
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        width: 52px;
-        height: 52px;
-        // &:hover>.footer__social-runner{
-        //     animation: animCircleActive 1s ease forwards;
-        // }
-    }
-    &__social-runner {
-        fill: none;
-        stroke: #9a06f0;
-        stroke-width: 2;
-        stroke-dashoffset: 157px;
-        stroke-dasharray: 157px;
-        &_active-hover {
-            animation: animCircleActive 1s ease forwards;
-        }
-        &_unHover {
-            animation: animCircle 1s ease reverse forwards;
+        color: $white-text;
+        transition: all 0.5s;
+        &:hover {
+            color: $main-color;
+            transition: all 0.5s;
+            background-color: $white-text;
         }
     }
 }
